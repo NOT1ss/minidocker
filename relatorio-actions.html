@@ -23,12 +23,26 @@
     <p class="status"><b>Status:</b> <span class="sucesso">Sucesso</span></p>
     <h3>Log Principal:</h3>
     <pre>
-[+] Building 8.2s (7/7) FINISHED
- => [internal] load build definition from Dockerfile 0.1s
- => => transferring dockerfile: 31B
- => [internal] load .dockerignore 0.0s
- ...
- => => naming to docker.io/library/teste-mini-site
+#6 [1/5] FROM docker.io/library/nginx:alpine@sha256:42a516af16b852e33b7682d5ef8acbd5d13fe08fecadc7ed98605ba5e3b26ab8
+...
+#7 [2/5] COPY index.html /usr/share/nginx/html/
+#7 DONE 0.0s
+
+#8 [3/5] COPY conceitos.html /usr/share/nginx/html/
+#8 DONE 0.0s
+
+#9 [4/5] COPY vantagens.html /usr/share/nginx/html/
+#9 DONE 0.0s
+
+#10 [5/5] COPY style.css /usr/share/nginx/html/
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.7s done
+#11 writing image sha256:4c7c184901c034a94335d62a139f52fe588e4dfbd6e49fb7c5e7fac48b5194fd done
+#11 naming to docker.io/library/teste-mini-site done
+#11 DONE 0.7s
     </pre>
     <div class="tentativas">
       <h3>Resumo das tentativas de correção:</h3>
