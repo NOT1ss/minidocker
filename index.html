@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é Docker? - Mini Site Explicativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                <h1>Docker Explicado</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">O que é?</a></li>
+                    <li><a href="conceitos.html" class="active">Uso Corporativo</a></li>
+                    <li><a href="vantagens.html">Vantagens</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>O que é Docker?</h2>
+                <p>Docker é uma plataforma de código aberto que automatiza a implantação, o dimensionamento e a gestão de aplicações dentro de "contêineres". Um contêiner é um ambiente leve, autônomo e executável que inclui tudo o que é necessário para rodar uma aplicação: o código, as bibliotecas, as ferramentas de sistema e as configurações.</p>
+                <p>A principal analogia é a dos contêineres de transporte do mundo real. Assim como um contêiner físico permite transportar mercadorias de forma padronizada em navios, trens e caminhões, um contêiner Docker empacota uma aplicação e suas dependências, permitindo que ela seja executada de forma consistente em qualquer ambiente de computação (desenvolvimento, teste, produção, etc.).</p>
+            </section>
+            <section class="card">
+                <h3>Imagens vs. Contêineres</h3>
+                <p>Para entender o Docker, é crucial diferenciar dois conceitos fundamentais:</p>
+                <ul>
+                    <li><strong>Imagem Docker:</strong> É um "template" ou um "molde" somente leitura. Uma imagem contém o sistema operacional base, as dependências e o código-fonte da aplicação. As imagens são construídas a partir de um arquivo de instruções chamado <code>Dockerfile</code>. Elas são armazenadas e compartilhadas através de registros, como o Docker Hub.</li>
+                    <li><strong>Contêiner Docker:</strong> É uma instância executável de uma imagem. Quando você "roda" uma imagem, você cria um contêiner. É possível criar múltiplos contêineres a partir da mesma imagem, todos isolados uns dos outros e do sistema hospedeiro. O contêiner é a aplicação em si, rodando de forma isolada e padronizada.</li>
+                </ul>
+                <p>Em resumo, Docker simplifica o processo de "empacotar" e "distribuir" software, resolvendo o clássico problema do "funciona na minha máquina, mas não na sua".</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

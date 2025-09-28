@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vantagens da Conteinerização - Mini Site Explicativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                <h1>Docker Explicado</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">O que é?</a></li>
+                    <li><a href="conceitos.html" class="active">Uso Corporativo</a></li>
+                    <li><a href="vantagens.html">Vantagens</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="card">
+                <h2>Vantagens da Conteinerização</h2>
+                <p>A utilização de contêineres, popularizada pelo Docker, oferece uma série de benefícios que impactam diretamente a produtividade, a segurança e a eficiência das operações de TI.</p>
+            </section>
+            <section class="card">
+                <h3>Benefícios Chave</h3>
+                <ul>
+                    <li>
+                        <strong>Portabilidade:</strong> Uma aplicação e suas dependências, empacotadas em um contêiner, podem ser executadas em qualquer sistema que tenha o Docker instalado, seja um notebook, um servidor local ou na nuvem, sem nenhuma alteração.
+                    </li>
+                    <li>
+                        <strong>Isolamento:</strong> Contêineres rodam de forma isolada uns dos outros e do sistema operacional hospedeiro. Isso significa que as dependências de uma aplicação não interferem nas de outra, e problemas em um contêiner não afetam o restante do sistema.
+                    </li>
+                    <li>
+                        <strong>Eficiência de Recursos:</strong> Ao contrário de máquinas virtuais, que virtualizam um sistema operacional inteiro, os contêineres compartilham o kernel do sistema operacional do host. Isso os torna muito mais leves, rápidos para iniciar e consomem menos memória e CPU.
+                    </li>
+                    <li>
+                        <strong>Escalabilidade Rápida:</strong> Como os contêineres são leves, é possível iniciar e parar novas instâncias de uma aplicação em segundos. Isso facilita a escalabilidade horizontal, ou seja, adicionar mais contêineres para lidar com picos de tráfego.
+                    </li>
+                    <li>
+                        <strong>Reprodutibilidade:</strong> O <code>Dockerfile</code> serve como uma "receita" que descreve exatamente como construir a imagem da aplicação. Isso garante que cada build seja consistente e reprodutível, eliminando variações entre ambientes.
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
